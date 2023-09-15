@@ -8,16 +8,16 @@ public class Timer {
         start = System.currentTimeMillis();
         timeRecords = new ArrayList<>();
     }
-    /** Reset the timer, set the start to current time */
+    /** Reset everything including the timeRecordList*/
     public void resetAll() {
         start = System.currentTimeMillis();
         timeRecords.clear();
     }
-
+    /** Reset the timer, set the start to current time */
     public void reset() {
         start = System.currentTimeMillis();
     }
-
+    /** Add a new record */
     public void click() {
         timeRecords.add(timeCountInSeconds());
     }
